@@ -5,6 +5,145 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4A36DB"
     tools:context=".DashBoardPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:layout_weight="6"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#4A36DB"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/businessman_character_avatar_isolated_24877_60111" />
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circle" />
+
+                        <ImageButton
+                            android:id="@+id/btnSearchGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="#4A36DB"
+                            android:foreground="@drawable/pluswhite"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/circleblack" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
