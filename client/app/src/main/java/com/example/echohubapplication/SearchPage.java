@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SearchPage extends AppCompatActivity {
 
-    Button btnReturn;
+    Button btnReturn, btnCreateGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +21,20 @@ public class SearchPage extends AppCompatActivity {
         setContentView(R.layout.activity_search_page);
 
         btnReturn = (Button) findViewById(R.id.btnReturn);
+        btnCreateGroup = (Button) findViewById(R.id.btnCreateGroup);
 
         btnReturn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SearchPage.this, DashBoardPage.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCreateGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchPage.this, CreateGroupPage.class);
                 startActivity(intent);
             }
         });
