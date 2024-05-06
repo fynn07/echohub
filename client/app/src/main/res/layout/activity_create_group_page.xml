@@ -9,34 +9,47 @@
     tools:context=".CreateGroupPage">
 
     <ImageButton
-        android:id="@+id/imgGroupProfile"
+        android:id="@+id/imgProfile"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/circleblack"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtGroupName"
+        android:id="@+id/edtUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/montserrat"
         android:hint="Group Name"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@id/imgGroupProfile"
+        app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+        app:layout_constraintEnd_toStartOf="@+id/btnReturn"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="@id/imgProfile" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Return"
+        android:textColor="#4A36DB"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imgGroupProfile"
-        app:layout_constraintTop_toTopOf="@id/imgGroupProfile" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtGroupBio"
+        android:id="@+id/edtProfileBio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,7 +63,7 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgGroupProfile" />
+        app:layout_constraintTop_toBottomOf="@id/imgProfile" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -58,7 +71,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtGroupBio">
+        app:layout_constraintTop_toBottomOf="@+id/edtProfileBio">
 
         <LinearLayout
             android:layout_width="match_parent"

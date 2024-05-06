@@ -5,6 +5,113 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4A36DB"
     tools:context=".EditUserPage">
+
+    <ImageButton
+        android:id="@+id/imgProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/circleblack"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+        app:layout_constraintEnd_toStartOf="@+id/btnReturn"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="@id/imgProfile" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Return"
+        android:textColor="#4A36DB"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtProfileBio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:hint="Bio"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfileBio">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAddMembers"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Set Status"
+                android:textColor="#4A36DB"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnAddMembers"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Change Password"
+                android:textColor="#4A36DB"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnCreateGroup"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Delete Account"
+                android:textColor="#4A36DB"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
