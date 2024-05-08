@@ -20,12 +20,10 @@
             android:exported="false" />
         <activity
             android:name=".SearchPage"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
         <activity
             android:name=".DashBoardPage"
-            android:exported="false" />
-        <activity
-            android:name=".SignupPage"
             android:exported="false" />
         <activity
             android:name=".LoginPage"
@@ -33,6 +31,7 @@
         <activity
             android:name=".LandingPage"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

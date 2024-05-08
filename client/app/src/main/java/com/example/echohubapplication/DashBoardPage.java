@@ -3,7 +3,6 @@ package com.example.echohubapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -21,6 +20,11 @@ public class DashBoardPage extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_dash_board_page);
 
+        Intent fetchIntent = getIntent();
+        String username = fetchIntent.getStringExtra("EXTRA_USERNAME");
+        String bio = fetchIntent.getStringExtra("EXTRA_BIO");
+        String intStatus = fetchIntent.getStringExtra("EXTRA_STATUS");
+
         btnSearchGroup = (ImageButton) findViewById(R.id.btnSearchGroup);
         btnProfile = (ImageButton) findViewById(R.id.btnProfile);
 
@@ -28,7 +32,11 @@ public class DashBoardPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DashBoardPage.this, SearchPage.class);
+                intent.putExtra("EXTRA_USERNAME", username);
+                intent.putExtra("EXTRA_BIO", bio);
+                intent.putExtra("EXTRA_STATUS", intStatus);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -36,7 +44,11 @@ public class DashBoardPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DashBoardPage.this, EditUserPage.class);
+                intent.putExtra("EXTRA_USERNAME", username);
+                intent.putExtra("EXTRA_BIO", bio);
+                intent.putExtra("EXTRA_STATUS", intStatus);
                 startActivity(intent);
+                finish();
             }
         });
     }

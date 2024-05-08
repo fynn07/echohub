@@ -35,13 +35,17 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/businessman_character_avatar_isolated_24877_60111" />
 
-                <SearchView
+                <TextView
+                    android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:foregroundTint="#FFFFFF"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="EchoHub"
+                    android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"/>
+                    android:textSize="48sp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -67,7 +71,8 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/young_dark_haired_man_icon_flat_illustration_young_dark_haired_man_vector_icon_web_isolated_yellow_background_96318_25361"
+                            android:visibility="visible" />
 
                         <ImageButton
                             android:layout_width="match_parent"
@@ -76,7 +81,7 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/user_icon_flat_style_any_design_96318_12149" />
 
                         <ImageButton
                             android:layout_width="match_parent"
@@ -85,7 +90,7 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/user_icon_flat_style_any_design_96318_12151" />
 
                         <ImageButton
                             android:layout_width="match_parent"
@@ -94,7 +99,7 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/user_icon_flat_style_any_design_96318_12137" />
 
                         <ImageButton
                             android:layout_width="match_parent"
@@ -103,7 +108,7 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/boy_icon_flat_style_any_design_96318_12145" />
 
                         <ImageButton
                             android:layout_width="match_parent"
@@ -112,7 +117,7 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/soldier_icon_flat_style_with_long_shadow_military_symbol_vector_illustration_96318_21620" />
 
                         <ImageButton
                             android:layout_width="match_parent"
@@ -121,7 +126,7 @@
                             android:adjustViewBounds="true"
                             android:backgroundTint="#4A36DB"
                             android:scaleType="centerInside"
-                            android:src="@drawable/circle" />
+                            android:src="@drawable/military_helmet_icon_flat_style_with_long_shadow_96318_16006" />
 
                         <ImageButton
                             android:id="@+id/btnSearchGroup"
@@ -141,7 +146,45 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"/>
+                    android:background="#FFFFFF"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- RecyclerView for displaying chat messages -->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewMessages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1" />
+
+                        <!-- Message input area -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <EditText
+                                android:id="@+id/editTextMessage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:hint="Type a message" />
+
+                            <Button
+                                android:id="@+id/buttonSend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Send" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
 
             </LinearLayout>
         </LinearLayout>
