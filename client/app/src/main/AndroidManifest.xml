@@ -13,15 +13,18 @@
         android:theme="@style/Theme.EchoHubApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SettingsPage"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".GroupChatPage"
+            android:exported="false" />
+        <activity
             android:name=".EditUserPage"
             android:exported="false" />
         <activity
-            android:name=".CreateGroupPage"
-            android:exported="false" />
-        <activity
             android:name=".SearchPage"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".DashBoardPage"
             android:exported="false" />
@@ -31,7 +34,6 @@
         <activity
             android:name=".LandingPage"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

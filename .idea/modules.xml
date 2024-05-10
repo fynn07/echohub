@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/client/.gradle/8.4/dependencies-accessors/23dc93a2dbc580d632e428e453f500506a835a8d/23dc93a2dbc580d632e428e453f500506a835a8d.iml" filepath="$PROJECT_DIR$/client/.gradle/8.4/dependencies-accessors/23dc93a2dbc580d632e428e453f500506a835a8d/23dc93a2dbc580d632e428e453f500506a835a8d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/.gradle/8.4/dependencies-accessors/59ab485aa8f7d177d909be98353b9b11dbf9cc64/59ab485aa8f7d177d909be98353b9b11dbf9cc64.iml" filepath="$PROJECT_DIR$/client/.gradle/8.4/dependencies-accessors/59ab485aa8f7d177d909be98353b9b11dbf9cc64/59ab485aa8f7d177d909be98353b9b11dbf9cc64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/app/src/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/client/app/src/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/echohub.iml" filepath="$PROJECT_DIR$/.idea/echohub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/app/src/test/test.iml" filepath="$PROJECT_DIR$/client/app/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
