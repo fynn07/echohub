@@ -20,7 +20,7 @@ public class SearchPage extends AppCompatActivity {
     Button btnReturn;
 
     ImageButton group1, group2, group3, group4, group5, group6;
-    TextView grp1, grp2, grp3, grp4, grp5, grp6;
+    TextView grp1, grp2, grp3, grp4, grp5, grp6, headerText;
 
     View rootview;
 
@@ -52,6 +52,7 @@ public class SearchPage extends AppCompatActivity {
         grp4 = findViewById(R.id.textView6);
         grp5 = findViewById(R.id.textView7);
         grp6 = findViewById(R.id.textView8);
+        headerText = findViewById(R.id.textView9);
 
         rootview = findViewById(R.id.main);
         rootview.setBackgroundColor(Color.parseColor(bgcolor));
@@ -63,6 +64,7 @@ public class SearchPage extends AppCompatActivity {
         grp4.setTextColor(Color.parseColor(fcolor));
         grp5.setTextColor(Color.parseColor(fcolor));
         grp6.setTextColor(Color.parseColor(fcolor));
+        headerText.setTextColor(Color.parseColor(fcolor));
 
 
 
